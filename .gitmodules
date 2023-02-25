@@ -1,9 +1,6 @@
 [submodule "Abigail"]
 	path = Abigail
 	url = https://github.com/abigail-1113/RWC---Abigail.git
-[submodule "Stephanie"]
-	path = Stephanie
-	url = https://github.com/stephanies8032/RWCWebDevelopment.git
 [submodule "Ms.Mou"]
 	path = Ms.Mou
 	url = https://github.com/MsMou/RWCWebDevelopment.git
