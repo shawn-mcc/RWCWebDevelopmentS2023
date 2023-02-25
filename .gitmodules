@@ -7,3 +7,9 @@
 [submodule "Keenan"]
 	path = Keenan
 	url = https://github.com/keenanfarhan/RWCWebDevelopment.git
+[submodule "Ayomide"]
+	path = Ayomide
+	url = https://github.com/ZackZoom/RWC-Web-Develpoment.git
+[submodule "Stephanie"]
+	path = Stephanie
+	url = https://github.com/stephanies8032/rwc.git
