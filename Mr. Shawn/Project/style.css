@@ -1,38 +1,45 @@
 :root {
-    --deep_blue: #1E58E6;
-    --light_pink: #FFB5E3;
-    --off_brown: #F3EFE3;
-    --white: #FFFFFF;
-    --light_blue: #7FE1F4;
-    --light_green: #D9FFB3;
+    --off-black: #222831;
+    --dark_grey: #393e46;
+    --orange: #f96d00;
+    --light_grey: #f2f2f2;
+    --gold: #ffc93c;
+    --error_red: #dc2f2f;
 }
 body {
-    background-color: var(--off_brown);
+    background-color: var(--off-black);
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-}
-.header {
-    background-color: var(--deep_blue);
-    color: var(--white);
-    padding: 10px;
-    text-align: center;
+    margin: auto;
+    color:var(--light_grey)
+    
 }
 
-.submod{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.col-8 , .col-4 {
+    background-color: var(--dark_grey);
 }
 
-.rowdata{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    color:var(--deep_blue);
-}
 h2{
-    background-color: var(--light_pink);
-    color: var(--deep_blue);
+    color:var(--gold);
+}
+
+.display-4{
+    color:var(--orange);
+}
+ /* Navbar style */
+
+.nav-item a{
+    background-color: var(--off-black);
+    margin: 5px;
+    border-radius: 25px;
+    color: var(--light_grey);
+}
+.nav-item a:hover{
+    color:var(--gold);
+}
+.active a{
+    color:var(--gold)
+}
+.active a:hover{
+    color:var(--gold)
 }

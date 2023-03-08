@@ -1,32 +1,187 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Mr. Shawn's Website</title>
+    <!-- Reqruited Meta Tags for Bootstrap -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Mr. Shawn's Website</title>
 </head>
+
 <body>
-<h1><b>My Family</b></h1>
-<p>This is my family page <a href="index.html">Go Back Home</a></p>
-</p>
-<h2>About Me</h2>
-<div id = "table">
-<table>
-    <tr>
-        <td><img src="https://drive.google.com/uc?export=download&id=1tZK-EybYwXL7IUfAhAodEG2qRZ4-OuaG" alt="Shawn" width="200" height="200"></td>
-        <td><p><ul>
-            <li>Major: Information Technology</li>
-            <li>Minor: Legal Studies</li>
-            <li>Year: Senior</li>
-            <li>Favorite Food: Cheesesteak</li>
-            <li>Favorite Color: Red</li>
-            <li>Favorite Movie: Dr. Strange</li>
-            <li>Favorite TV Show: Avatar the Last Airbender</li>
-            <li>Favorite Book: Epic</li>
-            <li>Favorite Video Game: SMITE </li>
-            <li>Pets: Julius Squeezer (Ball Python)</li>
-        </ul>
-        </p></td>
-    </tr>
-</table>
-</div>
+    <div class="wrapper"> <!-- Start of wrapper for entire page -->
+        <div class="row">
+            <div class="col-2">
+                <!-- intentionally left blank to give space on left border-->
+            </div>
+            <div class="col-8 navbar navbar-expand-lg"> <!-- Start of Navbar-->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- Start of Navbar content-->
+                    <ul class="navbar-nav mr-auto"> <!-- Start of Navbar List-->
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="index.html">Home</a>
+                            <!-- href = # means it will stay on the same page -->
+                        </li>
+                        <li class="nav-item active">
+                            <!-- Notice how we use the Active class to show which page we are currently on -->
+                            <a class="nav-link" href="#">My Family</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="my_hobbies.html">My Hobbies</a>
+                        </li>
+                    </ul> <!-- End of Navbar List-->
+                </div> <!-- End of Navbar content-->
+            </div> <!-- End of Navbar-->
+            <div class="col-2">
+                <!-- intentionally left blank to give space on right border-->
+            </div>
+        </div> <!-- End of row 1 -->
+        <div class="row"> <!-- Start of row 2 -->
+            <div class="col-2">
+                <!-- intentionally left blank to give space on left border-->
+            </div>
+            <div class="col-8">
+                <div class="jumbotron">
+                    <h1 class="display-4">My Family</h1>
+                </div>
+            </div>
+            <div class="col-2">
+                <!-- intentionally left blank to give space on right border-->
+            </div>
+        </div> <!-- End of row 2 -->
+        <div class="row">
+            <div class="col-2">
+                <!-- intentionally left blank to give space on left border-->
+            </div>
+            <div class="col-8">
+                <p>I was born in Philadelphia, Pennsylvania on June 26th, 1999. My Mother's name is Nicole, and my
+                    Father's name is Matthew.
+                    I have a twin sister named Victoria, a younger sister named Felicity, and a younger brother named
+                    Matthew II. My mother is a Pharmacist, and My father served in the Marines for 8 years before
+                    becoming a driver for a Fuel Company.
+                    My sister Victoria lives in Georgia with her husband on Fort Stewart, and my two younger siblings
+                    are still in High School. My little sister wants to be a chef, while my little brother wants to
+                    follow in our father's footsteps and join the Marines when he graduates.
+                </p>
+            </div>
+        </div> <!-- End of row 3 -->
+        <div class="row">
+            <div class="col-2">
+                <!-- intentionally left blank to give space on left border-->
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <img src="img/Dad.jpg" alt="Dad" class="img-fluid" style="height:250px;width:250px;">
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <img src="img/Mom.jpg" alt="Mom" class="img-fluid" style="height:250px;width:250px;">
+            </div>
+            <div class="col-2">
+                <!-- intentionally left blank for spacing between pictures-->
+            </div>
+        </div><!-- End of row 4 -->
+        <div class="row">
+            <div class="col-2">
+                <!-- intentionally left blank to give space on left border-->
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <p style="color:var(--orange)">My Father Matt</p>
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <p style="color:var(--orange)">My Mother Nicole and I</p>
+            </div>
+            <div class="col-2">
+                <!-- intentionally left blank for spacing between pictures-->
+            </div>
+        </div><!-- End of row 5 -->
+        <div class="row">
+            <div class="col-2">
+                <!-- intentionally left blank to give space on left border-->
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <img src="img/Tori.jpg" alt="Tori" class="img-fluid" style="height:250px;width:250px;">
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <img src="img/Shawn_McCausland.jpg" alt="Me" class="img-fluid" style="height:250px;width:250px;">
+            </div>
+            <div class="col-2">
+                <!-- intentionally left blank for spacing between pictures-->
+            </div>
+        </div><!-- End of row 6 -->
+        <div class="row">
+            <div class="col-2">
+                <!-- intentionally left blank to give space on left border-->
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <p style="color:var(--orange)">My Twin Sister Tori</p>
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <p style="color:var(--orange)">Me!</p>
+            </div>
+            <div class="col-2">
+                <!-- intentionally left blank for spacing between pictures-->
+            </div>
+        </div><!-- End of row 7 -->
+        <div class="row">
+            <div class="col-2">
+                <!-- intentionally left blank to give space on left border-->
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <img src="img/Felicity.jpg" alt="Felicity" class="img-fluid" style="height:250px;width:250px;">
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <img src="img/Matthew.jpg" alt="Matthew" class="img-fluid" style="height:250px;width:250px;">
+            </div>
+            <div class="col-2">
+                <!-- intentionally left blank for spacing between pictures-->
+            </div>
+        </div><!-- End of row 8 -->
+        <div class="row">
+            <div class="col-2">
+                <!-- intentionally left blank to give space on left border-->
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <p style="color:var(--orange)">My Little Sister Felicity</p>
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <p style="color:var(--orange)">My Little Brother Matthew</p>
+            </div>
+            <div class="col-2">
+                <!-- intentionally left blank for spacing between pictures-->
+            </div>
+        </div><!-- End of row 9 -->
+        <div class="row">
+            <div class="col-2">
+                <!-- intentionally left blank to give space on left border-->
+            </div>
+            <div class="col-8 d-flex justify-content-center">
+                <img src="img/All_of_us.jpg" alt="All of us" class="img-fluid" style="height:800px;width:600px;">
+            </div>
+            <div class="col-2">
+                <!-- intentionally left blank to give space on right border-->
+            </div>
+        </div><!-- End of row 10 -->
+        <div class="row">
+            <div class="col-2">
+                <!-- intentionally left blank to give space on left border-->
+            </div>
+            <div class="col-8 d-flex justify-content-center">
+                <p style="color:var(--orange)">Photo Credits to Dad</p>
+            </div>
+            <div class="col-2">
+                <!-- intentionally left blank to give space on right border-->
+            </div>
+        </div><!-- End of row 10 -->
+    </div> <!-- End of wrapper -->
+    <!-- Bootstrap JavaScript Bundle with Popper (Should be the LAST thing in your body)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
