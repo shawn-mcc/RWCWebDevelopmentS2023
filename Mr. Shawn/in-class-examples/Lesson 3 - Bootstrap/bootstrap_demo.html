@@ -2,19 +2,22 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"> <!-- Required Meta Tags for Bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <!-- Above is the link to Bootstrap's CSS file. It must be called BEFORE our custom stylesheet.
+             The integrity and crossorigin flags are just because we're using a file from the internet
+             and we want to make sure it doesn't get corrupted. -->
     <link rel="stylesheet" href="style.css">
     <title>All about me</title>
 </head>
 
 <body>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-1 header">
+    <div class="container-fluid"> <!-- A fluid container to hold everything means our page will scale with screen size -->
+        <div class="row"> <!-- We can use Bootstrap classes create our grid. It can be any number of rows, and is broken into 12 columns-->
+            <div class="col-1 header"> <!-- This is a column that is 1/12th of the screen width -->
                 <p>This is number 1</p>
             </div>
             <div class="col-1 header">
@@ -153,7 +156,7 @@
 
 
 
-
+        <!-- Required Javascript files for Bootstrap to work. Must be the LAST thing in your body -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
             integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
             crossorigin="anonymous"></script>
