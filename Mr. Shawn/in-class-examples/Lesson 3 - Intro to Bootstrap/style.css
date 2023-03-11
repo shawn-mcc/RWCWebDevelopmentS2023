@@ -1,0 +1,38 @@
+:root {
+    --deep_blue: #1E58E6;
+    --light_pink: #FFB5E3;
+    --off_brown: #F3EFE3;
+    --white: #FFFFFF;
+    --light_blue: #7FE1F4;
+    --light_green: #D9FFB3;
+} /* Root is a default psuedo class that we can write custom variables into with --. These variables are called by using the var() function. */
+body {
+    background-color: var(--off_brown);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.header {
+    background-color: var(--deep_blue);
+    color: var(--white);
+    padding: 10px;
+    text-align: center;
+}
+
+.submod{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.rowdata{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    color:var(--deep_blue);
+}
+h2{
+    background-color: var(--light_pink);
+    color: var(--deep_blue);
+}
