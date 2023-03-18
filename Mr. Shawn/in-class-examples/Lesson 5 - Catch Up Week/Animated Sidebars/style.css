@@ -1,0 +1,56 @@
+:root {
+    --off_black: #0B0C10;
+    --dark_grey: #1F2833;
+    --light_grey: #C5C6C7;
+    --bright_blue: #66FCF1;
+    --dark_blue: #45A29E;
+}
+body {
+    background-color: var(--off_black);
+    font-size: 16px;
+    margin: auto;
+    color:var(--light_grey)
+}
+.col-8{
+    background-color: var(--dark_grey);
+}
+.active a{
+    color:var(--bright_blue);
+}
+.nav-link{
+    color:var(--light_grey);
+    background-color: var(--off_black);
+    margin: 5px;
+    border-radius: 25px;
+}
+.nav-link:hover{
+    background-color: var(--dark_blue);
+}
+h1 {
+    color:var(--dark_blue);
+}
+/* CSS from cssportal.com */
+.custom-loader {
+    width: 60px;
+    height: 25px;
+    border: 2px solid var(--bright_blue);
+    border-radius: 50%;
+    display: grid;
+    animation: h2 1s infinite linear;
+  }
+  .custom-loader:before,
+  .custom-loader:after {
+    content:"";
+    grid-area: 1/1;
+    border:inherit;
+    border-radius: 50%;
+    animation: inherit;
+    animation-duration: 1.5s;
+  }
+  .custom-loader:after {
+    --s:-1;
+  }
+  
+  @keyframes h2 {
+     100% {transform:rotate(calc(var(--s,1)*1turn))}
+  }

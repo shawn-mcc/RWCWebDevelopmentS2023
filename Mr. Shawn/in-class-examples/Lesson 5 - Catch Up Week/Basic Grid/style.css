@@ -1,0 +1,29 @@
+:root {
+    --off-black: #222831;
+    --dark_grey: #393e46;
+    --orange: #f96d00;
+    --light_grey: #f2f2f2;
+    --gold: #ffc93c;
+    --error_red: #dc2f2f;
+}
+body {
+    background-color: var(--off-black);
+    font-size: 16px;
+    margin: auto;
+    color:var(--light_grey)
+}
+.col-8{
+    background-color: var(--dark_grey);
+}
+.active a{
+    color:var(--light_grey);
+}
+.nav-link{
+    color:var(--off-black);
+    background-color: var(--orange);
+    margin: 5px;
+    border-radius: 25px;
+}
+h1 {
+    color:var(--orange);
+}
