@@ -1,0 +1,30 @@
+:root {
+    --light_grey: #c0cbcf;
+    --dark_grey: #46394b;
+    --orange: #ee9458;
+    --sun_red: #9a4653;
+    --deep_blue: #234769;
+    --light_blue: #6990b1;
+}
+body {
+    background-image: url("img/bg.jpg");
+    font-size: 16px;
+    margin: auto;
+    color:var(--sun_red)
+}
+.col-8{
+    background-color:rgba(255,255,255,.4);
+}
+.active a{
+    color:var(--orange);
+    background-color: var(--light_blue);
+}
+.nav-link, .nav-link a{
+    color:var(--light_grey);
+    background-color: var(--deep_blue);
+    margin: 5px;
+    border-radius: 25px;
+}
+h1 {
+    color:var(--dark_grey);
+}
