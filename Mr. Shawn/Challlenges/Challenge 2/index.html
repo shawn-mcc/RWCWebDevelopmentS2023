@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Challenge 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>Challenge 2</h1>
+    <!-- STOP! For this challenge, you may ONLY modify the internal JavaScript at the bottom of this file. You may
+NOT edit any of the HTML -->
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+            </div>
+            <div class="col-8">
+                <p>Help! I'm trying to make a calulator that will help me find the volume of a cylinder, but my
+                    Javascript is broken.
+                    Can you help me fix it? I know the formula is pi times radius squared times height, but I can't get
+                    it to work! </p>
+            </div>
+            <div class="col-2">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+
+            </div>
+            <div class="col-8">
+                <p>Radius: <input type="text" id="radius"></p>
+                <p>Height: <input type="text" id="height"></p>
+                <button onclick="Calculate(height, radius)">Calculate</button>
+                <p>Volume: <span id="volume"></span></p>
+            </div>
+            <div class="col-2">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+
+            </div>
+            <div class="col-8">
+                Here are some examples of cylinders I know to check and make sure you're right.
+                <ul>
+                    <li>Radius: 2, Height: 4, Volume: 50.26548245743669</li>
+                    <li>Radius: 3, Height: 5, Volume: 141.3716694115407</li>
+                    <li>Radius: 4, Height: 6, Volume: 301.5928947446202</li>
+                </ul>
+            </div>
+            <div class="col-2">
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<!-- You may begin edits below this line -->
+<script>
+    function calculate() {
+        h = document.getElementById("height").value;
+        r = document.getElementById("radius").value;
+        const pi = "3.141592653589793";
+        var r2 = r**2;
+        var volume = pi * r **r * h;
+        document.getElementById("vol").innerHTML = volume;
+    }
+</script>
+
+</html>
