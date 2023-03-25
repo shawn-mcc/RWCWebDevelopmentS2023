@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fruit Loop Example</title>
+</head>
+<body>
+<div id="result">
+
+</div>
+</body>
+<script>
+    function myFuction(fruit) { // Create a new function called myFunction that requires an argument called fruit
+    var t = 0; // Create a variable called t and set it to 0
+    for (let i=4 ; i<=10; i++){ // Create a for loop. Start at i = 4, repeats as long as i is less than or equal to 10, and increment i by 1 after each loop. 
+        // So everything insdie the loop will run 7 times
+        if (fruit == "apple") { // We pass in "oranges", so this if statement is skipped
+            t+=2;
+        }else if (fruit == "orange") { // We pass in "oranges", so this also ignored, because it is checking for "orange" without the s
+            t+=5;
+        }else{ // This will execute, because the none of the above if statements were true
+            t+=1; // So each time the loop runs, t will be incremented by 1
+        }
+    }
+    return t; // t increments by 1 each time the loop runs, so t will be 7 when the loop is done
+}
+document.getElementById("result").innerHTML = myFuction("oranges"); 
+// In class I simply called the function, but am using document.getElementById to display the result in the browser.
+</script>
+</html>
