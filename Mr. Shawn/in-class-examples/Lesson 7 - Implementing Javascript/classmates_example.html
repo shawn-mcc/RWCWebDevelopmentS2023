@@ -10,7 +10,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style/style.css">
-
+    <!-- External JS files -->
     <script src="js/nav.js"></script>
     <script src="js/about_me.js"></script>
 
@@ -72,18 +72,17 @@
             </div>
         </div> <!-- End of row 3 -->
     </div> <!-- End of wrapper -->
-    <!-- Bootstrap JavaScript Bundle with Popper (Should be the LAST thing in your body)-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        doNav();
 
+
+    <script type="text/javascript">
+        // Call nav function from external js file
+        doNav();
+        // Fill table with data from object
         function fillTable() {
             row = document.getElementById("table_row_1");
-            data = `<td>`+
-    Shawn.first_name + `
-</td>
+            data = `<td>`+ // backtick is the key to the left of the number 1
+    Shawn.first_name + //create one big string with variables by using +
+     ` </td>
 <td>`+
     Shawn.last_name + `
 </td>
@@ -103,8 +102,13 @@
             console.log(Shawn.image_location);
         }
 
-        fillTable();
+        fillTable(); // call function we just wrote
     </script>
+    <!-- Bootstrap JavaScript Bundle with Popper (Should be the LAST thing in your body)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    
 </body>
 
 </html>

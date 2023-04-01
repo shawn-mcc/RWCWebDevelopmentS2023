@@ -1,5 +1,6 @@
 function doNav(){
-    
+    // Backtick is multi-line string
+    // Hold navbar here and call it so it is easier to edit
     var nav = `
     <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- Start of Navbar content-->
         <ul class="navbar-nav mr-auto"> <!-- Start of Navbar List-->
