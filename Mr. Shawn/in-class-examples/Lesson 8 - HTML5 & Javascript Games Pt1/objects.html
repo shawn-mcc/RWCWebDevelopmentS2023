@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Reqruited Meta Tags for Bootstrap -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <script src="js/nav.js"></script>
+    <script src="js/about_me.js"></script>
+    <script src="../../../Ms.Mou/Project/js/about_me.js"></script>
+
+    <title>Mr. Shawn's Website</title>
+</head>
+
+<body>
+    <div class="wrapper"> <!-- Start of wrapper for entire page -->
+        <div class="row">
+            <div class="col-2">
+                <!-- intentionally left blank to give space on left border-->
+            </div>
+            <div class="col-8 navbar navbar-expand-lg"> <!-- Start of Navbar-->
+            <nav id="navbar-space">
+                <!-- External JS -->
+    
+            </nav>
+        </div> <!-- End of Navbar-->
+            <div class="col-2">
+                <!-- intentionally left blank to give space on right border-->
+            </div>
+        </div> <!-- End of row 1 -->
+        <div class="row"> <!-- Start of row 2 -->
+            <div class="col-2">
+                <!-- intentionally left blank to give space on left border-->
+            </div>
+            <div class="col-8">
+                <div class="jumbotron">
+                    <h1 class="display-4">Look at my Classmates!</h1>
+                </div>
+                <div class="row">
+                    <table class="table" id="class_table">
+                        <thead>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>School</th>
+                            <th>Grade</th>
+                            <th>Favorite Subject</th>
+                            <th>Image</th>
+                            <th>Visit their site!</th>
+                        </thead>
+                        <tr id="table_row_0">
+                            <!-- Fill in with JS -->
+                        </tr>
+                    </table>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <!-- intentionally left blank to give space on right border-->
+            </div>
+        </div> <!-- End of row 2 -->
+        <div class="row"><!-- Start of row 3 -->
+            <div class="col-2">
+                <!-- intentionally left blank to give space on left border-->
+            </div>
+            
+        <div class="col-2">
+            <!-- intentionally left blank to give space on right border-->
+        </div>
+    </div> <!-- End of row 3 -->
+    </div> <!-- End of wrapper -->
+
+    <script type = "text/javascript" >
+        function fillTable(classmates){
+            for (var i =0; i<classmates.length; i++){
+                var row = document.getElementById("table_row_" + i);
+                var data = `<td>` + classmates[i].name + `</td>
+                            <td>` + classmates[i].age + `</td>
+                            <td>` + classmates[i].school + `</td>
+                            <td>` + classmates[i].grade + `</td>
+                            <td>` + classmates[i].favorite_subject + `</td>
+                            <td><img src="` + classmates[i].image_url + `"style="height:70px; width:80px"></td>
+                            <td><button class="button button-btn"><a href="` + classmates[i].home_page_url + `">Visit Their Site</a></td>`;
+                row.innerHTML = data;
+                newrow = document.createElement("tr");
+                newrow.id = "table_row_" + (i+1);
+                row.after(newrow);
+                       
+
+                
+            } 
+        }
+        fillTable([Shawn,Mou]);
+    </script>
+
+
+
+
+
+    <!-- Bootstrap JavaScript Bundle with Popper (Should be the LAST thing in your body)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script type = "text/javascript" >
+            doNav();
+        </script>
+</body>
+
+</html>
