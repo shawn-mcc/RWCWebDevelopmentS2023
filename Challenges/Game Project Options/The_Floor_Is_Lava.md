@@ -18,10 +18,11 @@
     - Path must start at one end of the grid, and end at the other side.
 3. User able to click on tiles to interact with them and attempt to recreate the pattern. 
    - Correct tiles clicked are highlighted and let the player continue
-   - Incorrect tile clicks result in a "Game Over" and the correct answer being revealed to the player.
+   - Incorrect tile clicks result in a life lost and the player being put back at the start of the grid
 4. Game is run on an internal timer to keep track of player run time
 5. System handles end-game
   - On a sucessful completion, system shows player "You Win" screen and their completion time
+  - If all lives are lost before the puzzle is solved, a "Game Over" screen appears and reveals the correct answer to the players
 
 [Example Video](https://youtu.be/13WR2gHK75E?t=140)
 ### Recomended Reading
