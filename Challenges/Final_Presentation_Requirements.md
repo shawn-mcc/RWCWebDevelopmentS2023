@@ -64,7 +64,7 @@ In preperation for your Final Presentaion, I've put together this checklist to h
                 - *Needs to be link to your live site, not local, so for example, mine is "http://rwc-webdev-s2023.000webhostapp.com/Mr.%20Shawn/Project/index.html". You can replace the part with my name with yours instead.*
     - Part B: Building the Table
         - [ ] Must be named "my_classmates.html"
-        - [ ] Table is contained within standard stie layout/grid
+        - [ ] Table is contained within standard site layout/grid
         - [ ] Page calls the files of every other student objects
             - Remember that ../ allows you to go up a directory so you can navigate to where your classmates files are without having them on your system
         - [ ] Page contains an empty table that is populated dynamically with Javascript
