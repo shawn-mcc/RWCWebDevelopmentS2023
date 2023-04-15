@@ -1,0 +1,89 @@
+body {
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin: auto;
+    color: #889096;
+    text-shadow: 4px 4px 4px #aaa;
+    
+    
+
+}
+#title{
+    background-color: #cad0d4;
+    border: 10px dashed #889096;
+}
+.display-4 {
+    font-size: 1.5em;
+    font-family: 'Alkatra', sans-serif;
+    text-shadow: 4px 4px 4px #aaa;
+    padding-bottom: 1em;
+}
+.col-8 {
+    font-size : 3.5em;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn {
+    background-color: #d53369 !important;
+}
+.btn:hover {
+    background-color: #daae51 !important;
+}
+.btn  {
+    color: #daae51;
+
+}
+.btn:hover  {
+    color: #d53369;
+    
+}
+#PreviewName {
+    color: #889096;
+    text-decoration: wavy underline;
+}
+
+table{
+    color: #889096 !important;
+}
+
+th {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}
+td {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    color: #889096;
+}
+table button {
+    background-color: #daae51 !important;
+}
+table button:hover {
+    background-color: #d53369 !important;
+}
+table button a {
+    color: #daae51;
+    font-size:1.5em;
+}
+table button:hover a {
+    color: #d53369;
+    font-size:1.5em;
+}
+#ProfilePic img{
+    border-radius: 50%;
+    border: 2px solid #d53369;
+    width: 10em;
+    height: 10em;
+    margin-bottom: 4em;
+    margin-left:2em;
+    display: block;
+}
+#PreviewBio {
+    color: #889096;
+    font-size: 1em;
+    font-family: 'Alkatra', sans-serif;
+    text-shadow: 4px 4px 4px #aaa;
+    padding-bottom: 1em;
+}
+#StudentSelectMenu {
+    font-size: .6em;
+}

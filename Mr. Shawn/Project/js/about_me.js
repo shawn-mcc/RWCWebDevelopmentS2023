@@ -5,26 +5,20 @@ const Shawn = {
     grade: "Senior",
     favorite_subject: "Web Development",
     image_url: "https://drive.google.com/uc?export=download&id=1tZK-EybYwXL7IUfAhAodEG2qRZ4-OuaG",
-    home_page_url: "http://rwc-webdev-s2023.000webhostapp.com/Mr.%20Shawn/Project/index.html"
-}
-const Chris = {
-    name: "Chris Evans",
-    age: 41,
-    school: "NYU",
-    grade: "Graduated",
-    favorite_subject: "Theater",
-    image_url: "https://media.npr.org/assets/img/2022/11/08/ap22312071681283-0d9c328f69a7c7f15320e8750d6ea447532dff66.jpg",
-    home_page_url: "#"
-}
-
-const Gandalf = {
-    name: "Gandalf the Grey",
-    age: 2400,
-    school: "Minas Tirith",
-    grade: "Wizard",
-    favorite_subject: "Magic",
-    image_url: "https://static.wikia.nocookie.net/lotr/images/e/e7/Gandalf_the_Grey.jpg/revision/latest?cb=20121110131754",
-    home_page_url: "#"
+    home_page_url: "http://rwc-webdev-s2023.000webhostapp.com/Mr.%20Shawn/Project/index.html",
+    about_me: `
+    Hi there! My name is Shawn and I am a 23 year old college student studying Information Technology at
+                    NJIT. I
+                    was born in Philly and raised in South Jersey. I am excited to be teaching this class on Web
+                    Development
+                    with RWC, as I
+                    have a lot of experiance in this field. I'm also super happy to be able to give back, as when I was
+                    in
+                    middle and high school,
+                    I also participated in similar programs to RWC. I love teaching and programming, so choosing to
+                    teach
+                    this track was a no brainer.
+    `
 }
 
 
