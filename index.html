@@ -1,18 +1,191 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <!-- Reqruited Meta Tags for Bootstrap -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>RWC Web Dev 2023 Home Page</title>
-</head>
-<body>
-    <h1> RWC Web Dev 2023 Home Page</h1>
-    <a href="Abigail/Project/index.html">Abigail's Project</a>
-    <a href="Ayomide/Project/index.html">Ayomide's Project</a>
-    <a href="Keenan/Project/index.html">Keenan's Project</a>
-    <a href="Mr. Shawn/Project/index.html">Mr. Shawn's Project</a>
-    <a href="Ms.Mou/Project/index.html">Ms.Mou's Project</a>
-    <a href="Stephanie/Project/index.html">Stephanie's Project</a>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Alkatra|Dancing+Script|Pacifico|Righteous|VT323">
+    <link rel="stylesheet" href="style/style.css">
+    <!--JS Files-->
+    <script src="Abigail/Project/js/about_me.js"></script>
+    <script src="Ayomide/Project/js/about_me.js"></script>
+    <script src="Keenan/Project/js/about_me.js"></script>
+    <script src="Stephanie/Project/js/about_me.js"></script>
+    <script src="Mr. Shawn/Project/js/about_me.js"></script>
+    <script src="Ms.Mou/Project/js/about_me.js"></script>
 
+
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="wrapper"> <!-- Start of wrapper for entire page -->
+        <div class="row"> <!-- Start of row 2 -->
+            <div class="col-2">
+                <!-- intentionally left blank to give space on left border-->
+            </div>
+            <div class="col-8">
+                <div class="jumbotron">
+                    <h1 class="display-4 text-center" id="title">Welcome to RWC Srping 2023 Web Development!</h1>
+                </div>
+            </div>
+            <div class="col-2">
+                <!-- intentionally left blank to give space on right border-->
+            </div>
+        </div> <!-- End of row 2 -->
+        <div class="row"><!-- Start of row 3 -->
+            <div class="col-2">
+                <!-- intentionally left blank to give space on left border-->
+            </div>
+            <div class="col-8">
+                <div class="row d-flex justify-content-center" id="StudentSelectMenu">
+                    <div class="row">
+                        <div class="col" id="header">
+                            <h2 class="text-center">Feel free to click on our names below to learn more about us, or
+                                check out our <a href="midterm.html">Midterm Presentation</a>!</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <!-- intentionally left blank to give space on left border-->
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-secondary" onclick="viewStudent(Abigail)">Abigail</button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-secondary" onclick="viewStudent(Ayomide)">Ayomide</button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-secondary" onclick="viewStudent(Keenan)">Kennan</button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-secondary" onclick="viewStudent(Stephanie)">Stephanie</button>
+                            </div>
+                            <div class="col">
+                                <!-- intentionally left blank to give space on right border-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <!-- intentionally left blank to give space on right border-->
+            </div>
+        </div> <!-- End of row 3 -->
+        <div class="row">
+            <div class="col-2">
+                <!-- intentionally left blank to give space on left border-->
+            </div>
+            <div class="col-8" id="StudentPreview" hidden>
+                <div class="row">
+                    <div class="jumbotron">
+                        <h1 class="display-4 text-center" id="PreviewName"></h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <!-- intentionally left blank to give space inbetween pic and table -->
+                    </div>
+                    <div class="col-5" id="ProfilePic">
+
+                    </div>
+                    <div class="col-1">
+                        <!-- intentionally left blank to give space inbetween pic and table -->
+                    </div>
+                    <div class="col-5">
+                        <table class="table table-striped table-bordered table-light text-center">
+                            <tbody>
+                                <thead>
+                                    <th colspan=2>
+                                        <h3>What you need to know about me:</h3>
+                                    </th>
+                                    
+                                </thead>
+                                <tr>
+                                    <td>
+                                        <h4>School:</h4>
+                                    </td>
+                                    <td>
+                                        <h4 id="PreviewSchool"></h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>Age:</h4>
+                                    </td>
+                                    <td>
+                                        <h4 id="PreviewAge"></h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>Grade:</h4>
+                                    </td>
+                                    <td>
+                                        <h4 id="PreviewGrade"></h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>Favorite Subject:</h4>
+                                    </td>
+                                    <td>
+                                        <h4 id="PreviewSubject"></h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="HomeAnchor" colspan=2></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" id="PreviewBio">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <!-- intentionally left blank to give space on right border-->
+            </div>
+        </div>
+    </div> <!-- End of wrapper -->
+
+    <script type="text/javascript">
+        function viewStudent(student){
+            // Make the preview visible then fill in the menu with the students data
+            document.getElementById("StudentPreview").hidden = false;
+            document.getElementById("PreviewName").innerHTML = student.name;
+            document.getElementById("PreviewSchool").innerHTML = student.school;
+            document.getElementById("PreviewAge").innerHTML = student.age;
+            document.getElementById("PreviewGrade").innerHTML = student.grade;
+            document.getElementById("PreviewSubject").innerHTML = student.favorite_subject;
+            document.getElementById("PreviewBio").innerHTML = student.about_me;
+            document.getElementById("ProfilePic").innerHTML = "<img src=" + student.image_url + " alt=" + student.name + ">";
+            document.getElementById("HomeAnchor").innerHTML = "<button type='button' class='btn btn-primary'><a href='http://rwc-webdev-s2023.000webhostapp.com/" + student.name + "/Project/index.html'>Visit my Site to learn more!</a></button>";
+            // Move the original menu to the bottom of the page and update the header
+            StudentSelect = document.getElementById("StudentSelectMenu");
+            document.getElementById("header").innerHTML = "<p>Make sure you check out my full site by clicking on the button inside the table! Feel free to click on another student to see their quick intro, or click <a href='http://rwc-webdev-s2023.000webhostapp.com/midterm.html'>here</a> to view our Midterm Presentation.</p>";
+            tmpData = StudentSelect.innerHTML;
+            StudentSelect.parentNode.removeChild(StudentSelect);
+            newSelect = document.createElement("div");
+            newSelect.id = "StudentSelectMenu";
+            newSelect.className = "row d-flex justify-content-center"
+            newSelect.innerHTML = tmpData;
+            document.getElementById("StudentPreview").appendChild(newSelect);
+        }
+    </script>
+
+    <!-- Bootstrap JavaScript Bundle with Popper (Should be the LAST thing in your body)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

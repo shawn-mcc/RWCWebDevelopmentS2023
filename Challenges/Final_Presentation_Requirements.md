@@ -58,6 +58,7 @@ In preperation for your Final Presentaion, I've put together this checklist to h
             - school
             - grade
             - favorite_subject
+            - about_me
             - image_url
                 - Remember that if you're using google drive, you have to get a sharable link, and put that link into a source grabber like [this one](https://sites.google.com/site/gdocs2direct/) and use that link as the url
             - home_page_url
